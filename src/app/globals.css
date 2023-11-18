@@ -23,8 +23,56 @@ body {
 
 .custom-placeholder{
   font-family: "League Spartan", sans-serif;
+  font-size: 1.8rem;
 }
 
 input::placeholder{
   text-align: center;
+}
+
+section.authentic {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas:
+            "bowl content";
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 10%;
+  text-align: left;
+  align-self: center;
+  height: 100vh;
+}
+
+.img {
+  grid-area: bowl;
+  width: 60%;
+  height: 90%;
+}
+
+.appFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+position: fixed;
+  bottom: 0;
+}
+
+.form_wrapper {
+  width: 70%;
+}
+
+.form-control {
+  margin-bottom: 20px;
+}
+
+.auth-footer {
+  margin-top: 30px;
 }

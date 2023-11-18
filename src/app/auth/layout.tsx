@@ -10,23 +10,15 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <main className="items-center justify-between">
-      <div>
-        <div className="flex justify-center">
-          <div className="flex-1 ">
-            <Image src={bgImage} alt="Picture of the author" />
-          </div>
-
-          <div className=" text-center mx-auto bg-white px-6 py-4 justify-center">
-            <div className=" text-center mx-auto">
-              <Image src={logo} alt="Picture of the author" />
+    <main className="authContainer">
+        <section className="authentic">
+            <Image src={bgImage} className={"img"} alt="Picture" />
+            <div className="right-col">
+                <Image src={logo} className={"mt-7"} alt="Logo" />
+                {children}
             </div>
-
-            {children}
-          </div>
-        </div>
+        </section>
         <AppFooter text="(c) Copyright Love Clinic 2023" />
-      </div>
     </main>
   );
 }
