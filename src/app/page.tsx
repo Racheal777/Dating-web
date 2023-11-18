@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import AppInput from "@/components/AppInput";
+import AppInput from "./components/AppInput";
 
 export default function Home() {
   return (
