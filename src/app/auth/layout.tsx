@@ -11,14 +11,14 @@ export default function AuthLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="flex flex-col min-h-screen">
-        <div className="flex-grow flex">
+    <div className="flex flex-col max-h-screen">
+        <div className="flex-grow flex max-h-screen overflow-auto">
 
             <div className="w-1/2 md:flex hidden bg-gray-200 p-8 overflow-hidden h-screen">
                 <Image src={bgImage} className="object-cover h-full w-full rounded-md" alt="Picture" />
             </div>
             <div className="w-full md:w-1/2 p-8 flex flex-col items-center">
-                <Image src={logo} className={""} alt="Logo" />
+                {/*<Image src={logo} className={""} alt="Logo" />*/}
                 {children}
             </div>
         </div>
